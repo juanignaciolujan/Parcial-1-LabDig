@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juani Lujan — Música &amp; Video</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .embed-wrapper {
+      margin: 24px 0 8px;
+      border: 1px solid var(--borde);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .embed-wrapper iframe {
+      display: block;
+      width: 100%;
+    }
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      border-radius: 4px;
+      border: 1px solid var(--borde);
+      margin: 24px 0 8px;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Juani <span>Lujan</span></h1>
+    <nav>
+      <a href="index.html">← Volver al portfolio</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Audio: Spotify -->
+    <section>
+      <h2>Música</h2>
+      <p>
+        Escucho mucho a <strong>Louie Zong</strong>, quien además de diseñar 
+        produce música independiente. Su trabajo sonoro tiene la misma 
+        sensibilidad que su obra visual: texturas cálidas, 
+        estructuras simples y mucho detalle.
+      </p>
+      <div class="embed-wrapper">
+        <iframe 
+          data-testid="embed-iframe"
+          style="border-radius:12px" 
+          src="https://open.spotify.com/embed/album/1KFGq3710E0bF0n9D9gK4z?utm_source=generator" 
+          width="100%" 
+          height="152" 
+          frameBorder="0" 
+          allowfullscreen="" 
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+          loading="lazy">
+        </iframe>
+      </div>
+      <p class="atribucion">
+        Música: Louie Zong. Disponible en 
+        <a href="https://open.spotify.com/intl-es/album/1KFGq3710E0bF0n9D9gK4z" target="_blank" rel="noopener">
+          Spotify
+        </a>. 
+        Todos los derechos reservados al artista.
+      </p>
+    </section>
+
+    <!-- Video: YouTube -->
+    <section>
+      <h2>Video</h2>
+      <p>
+        Un video de Louie Zong que resume bien su forma de trabajar: 
+        animación cuadro a cuadro, síntesis entre técnicas digitales 
+        y una narrativa visual precisa.
+      </p>
+      <div class="video-wrapper">
+        <iframe 
+          src="https://www.youtube.com/embed/Yw6u6YkTgQ4" 
+          title="Video de Louie Zong — YouTube"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p class="atribucion">
+        Video: Louie Zong. Disponible en 
+        <a href="https://www.youtube.com/watch?v=Yw6u6YkTgQ4" target="_blank" rel="noopener">
+          YouTube
+        </a>. 
+        Todos los derechos reservados al artista.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="licencia" vocab="https://creativecommons.org/ns#" typeof="Work">
+      <p>
+        Contenidos propios bajo licencia 
+        <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">
+          CC BY-NC-ND 4.0
+        </a>. 
+        Los contenidos de terceros (Louie Zong) conservan sus derechos originales.
+      </p>
+    </div>
+    <p>
+      <a href="index.html">← Volver al portfolio</a>
+    </p>
+  </footer>
+
+</body>
+</html>

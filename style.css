@@ -1,0 +1,193 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+
+/* Variables de color */
+:root {
+  --azul: #1A6BFF;
+  --naranja: #FF6B1A;
+  --verde: #1ACC7A;
+  --negro: #111111;
+  --gris: #555555;
+  --fondo: #F9F9F7;
+  --borde: #E0E0D8;
+}
+
+/* Reset y base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--negro);
+  background-color: var(--fondo);
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 36px 0 20px;
+  border-bottom: 2px solid var(--negro);
+  margin-bottom: 48px;
+}
+
+header h1 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 2.4rem;
+  letter-spacing: -0.5px;
+  color: var(--negro);
+}
+
+header h1 span {
+  color: var(--naranja);
+}
+
+nav a {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--negro);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+  transition: border-color 0.2s ease;
+}
+
+nav a:hover {
+  border-bottom-color: var(--azul);
+  color: var(--azul);
+}
+
+/* Secciones */
+section {
+  margin-bottom: 48px;
+}
+
+h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gris);
+  margin-bottom: 16px;
+  border-left: 4px solid var(--verde);
+  padding-left: 12px;
+}
+
+p {
+  max-width: 65ch;
+  margin-bottom: 16px;
+  color: var(--negro);
+}
+
+/* Destacado intro */
+.intro-texto {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  font-style: italic;
+  color: var(--negro);
+  border-left: 3px solid var(--naranja);
+  padding-left: 20px;
+  margin-bottom: 24px;
+}
+
+/* Enlace estilizado */
+a {
+  color: var(--azul);
+  text-decoration: none;
+  border-bottom: 1px solid var(--azul);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+a:hover {
+  color: var(--naranja);
+  border-bottom-color: var(--naranja);
+}
+
+/* Imagen */
+.obra {
+  margin: 24px 0 8px;
+  display: block;
+  max-width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  border: 1px solid var(--borde);
+}
+
+.atribucion {
+  font-size: 0.78rem;
+  color: var(--gris);
+  font-style: italic;
+  margin-top: 6px;
+}
+
+/* Licencia */
+.licencia {
+  font-size: 0.82rem;
+  color: var(--gris);
+  border-top: 1px solid var(--borde);
+  padding-top: 16px;
+  margin-top: 8px;
+}
+
+/* Footer */
+footer {
+  border-top: 2px solid var(--negro);
+  padding: 28px 0 40px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer p {
+  font-size: 0.82rem;
+  color: var(--gris);
+  margin-bottom: 0;
+}
+
+footer a {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Tag de área */
+.tag {
+  display: inline-block;
+  font-family: 'Syne', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 2px;
+  margin-right: 6px;
+  margin-bottom: 14px;
+}
+
+.tag-azul { background: var(--azul); color: white; }
+.tag-naranja { background: var(--naranja); color: white; }
+.tag-verde { background: var(--verde); color: white; }
+
+/* Responsive básico */
+@media (max-width: 600px) {
+  header { flex-direction: column; gap: 12px; }
+  header h1 { font-size: 1.8rem; }
+  body { font-size: 16px; }
+}
